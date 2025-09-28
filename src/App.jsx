@@ -64,7 +64,7 @@ function App() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map(product => (
             <div key={product.productId} className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform">
-              <img src={`/src/assets/${product.image}`} alt={product.name} className="w-full h-48 object-cover"/>
+              <img src={`/assets/${product.image}`} alt={product.name} className="w-full h-48 object-cover"/>
               <div className="p-4">
                 <h3 className="text-xl font-semibold text-gray-900">{product.name}</h3>
                 <p className="text-gray-700 font-bold text-2xl mt-2">{product.price.toFixed(2)} Taka</p>
