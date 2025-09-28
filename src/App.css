@@ -1,0 +1,162 @@
+/* General App Styling */
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+.app-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.app-header nav button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.product-card h3 {
+  margin: 0 0 8px 0;
+}
+
+.product-card p {
+  color: #666;
+  margin: 0 0 16px 0;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  min-width: 300px;
+  text-align: center;
+}
+
+.code-display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin: 20px 0;
+  padding: 10px;
+  border: 2px dashed #007bff;
+  border-radius: 5px;
+  background-color: #f0f8ff;
+}
+
+.modal-content button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Checkout View */
+.checkout-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.code-input {
+  padding: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  letter-spacing: 8px;
+}
+
+.checkout-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.feedback-message {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #28a745; /* Default to green, can be changed with classes */
+}
